@@ -16,16 +16,21 @@ limitations under the License.
 #}
 <meta charset="utf-8" />
 <title>Query Result</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
-<table>
+<table class="table">
+    <thead>
     <tr>
         <th>URL</th>
         <th>View Count</th>
     </tr>
+    </thead>
+    <tbody>
     {% for result in results %}
     <tr>
         <td>{{ result[0] }}</td>
         <td>{{ result[1] }}</td>
     </tr>
     {% endfor %}
+    <tbody>
 </table>
